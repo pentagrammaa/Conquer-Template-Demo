@@ -36,24 +36,15 @@
 
 
 .conquer {
-  position: relative;
   text-align: center;
+  color: white;
 }
 .conquer img {
   width: 100%;
-  transform: translateZ(-999px);
-
-  z-index: -1;
 }
-.conquer p {
-  color: white;
-  transform: translateZ(999px);
-  z-index: 1;
-}
-
 .conquer .firstTitle {
   position: absolute;
-  top: 35%;
+  top: 25%;
   left: 36%;
   font-size: 70px;
   font-family: serif;
@@ -62,7 +53,7 @@
 .conquer .firstSubTitle {
   position: absolute;
   font-family: arial;
-  top: 53%;
+  top: 43%;
   left: 37%;
   font-size: 27px;
 }
