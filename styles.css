@@ -1,15 +1,21 @@
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
 .mainNav {
   z-index: 100;
   position: fixed;
   background-color: rgb(64,64,64);
   height: 85px;
-  width: 100%;
+  width: 100vw;
   font-size: 20px;
   font-family: arial;
   display: flex;
   justify-content: center;
   align-items: center;
-  top:-1%;
+  top: -1%;
+  left: -1px;
 }
 .mainNav ul {
   list-style-type: none;
@@ -40,78 +46,384 @@
   color: white;
 }
 .conquer img {
-  width: 100%;
+  height: 100vh;
+  margin-left: 30px;
+  position: fixed;
+  top: 0%;
+  width: 95%;
+  left: 0px;
+  z-index: -5;
 }
-.conquer .firstTitle {
-  position: absolute;
-  top: 25%;
-  left: 36%;
+.conquer div {
+  height: 89vh;
+}
+.conquer p {
+  position: relative;
+  top: 35%;
+  left: 20px;;
   font-size: 70px;
   font-family: serif;
   text-shadow: 3px 3px black;
 }
 .conquer .firstSubTitle {
-  position: absolute;
   font-family: arial;
-  top: 43%;
-  left: 37%;
+  top: 30%;
+  left: 20px;
   font-size: 27px;
 }
 
 
 
-
 .threeColumns {
+  background-color: white;
+  padding: 65px 0px 45px 0px;
   display: flex;
   justify-content: center;
-  width: 100%;
   font-family: arial;
+  font-size: 16px;
+  position: relative;
+  align-items: flex-start;
 }
-
 .threeColumns img {
   width: 100%;
+  height: 30%;
+}
+.threeColumns button {
+  padding: 10px 31px 10px 31px;
+  font-size: 18px;
+  color: white;
+  border-radius: 8px;
+  position: relative;
+  left: 15%;
 }
 .container1 {
-  width: 25%;
+  width: 24%;
   background-color: rgb(236, 236, 236);
-  margin-right: 20px;
+  margin-right: 25px;
+  padding-bottom: 20px;
 }
 .container1 h3 {
-  color: green;
-  font-family: arial;
+  color: rgb(59, 162, 85);
   font-size: 20px;
-  margin-left: 10px;
+  margin-left: 15px;
 }
 .container1 p {
-  padding: 10px;
-  font-size: 14px;
+  padding: 5px 15px 10px 15px;
+  line-height: 1.5;
+}
+.container1 button {
+  background-color: rgb(59, 162, 85);
+}
+.container1 button:hover {
+  background-color: rgb(72, 233, 113);
+  transition: background-color 0.5s;
 }
 .container2 {
-  width: 25%;
+  width: 24%;
   background-color: rgb(236, 236, 236);
-  margin-right: 20px;
+  margin-right: 25px;
+  padding-bottom: 20px;
 }
 .container2 h3 {
   color: rgb(86, 133, 204);
-  font-family: arial;
   font-size: 20px;
-  margin-left: 10px;
+  margin-left: 15px;
 }
 .container2 p {
-  padding: 10px;
-  font-size: 18px;
+  padding: 5px 15px 10px 15px;
+  line-height: 1.5;
+}
+.container2 button {
+  background-color: rgb(86,133,204);
+}
+.container2 button:hover {
+  background-color: rgb(138, 184, 255);
+  transition: background-color 0.5s;
 }
 .container3 {
-  width: 25%;
+  width: 24%;
   background-color: rgb(236, 236, 236);
 }
 .container3 h3 {
   color: gray;
-  font-family: arial;
   font-size: 20px;
-  margin-left: 10px;
+  margin-left: 15px;
 }
 .container3 p {
-  padding: 10px;
+  padding: 5px 15px 10px 15px;
+  line-height: 1.5;
+}
+.container3 button {
+  background-color: rgb(120, 15, 41) ;
+  margin-bottom: 20px;
+}
+.container3 button:hover {
+  background-color: red;
+  transition: background-color 0.5s;
+}
+
+
+
+
+.twoColumns {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  margin-left: -26px;
+  background-color: white;
+  width: 100vw;
+  left: -2%;
+  font-family: arial;
+  font-size: 15px;
+  color: rgb(121, 124, 123);
+}
+.twoColumns div {
+  width: 36%;
+  margin-left: 26px;
+  margin-bottom: 50px;
+  background-color: rgb(244,244,244);
+  line-height: 1.5;
+}
+.twoColumns div img {
+  height: 30%;
+  width: 100%;
+}
+.twoColumns h3 {
+  position: relative;
+  left: 25%;
+  padding-bottom: 20px;
+}
+.twoColumns p {
+  padding: 0px 20px 0px 20px;
+}
+.twoColumns button {
+  margin-left: 140px;
+  padding: 10px 31px 10px 31px;
   font-size: 18px;
+  color: white;
+  border-radius: 8px;
+  position: relative;
+  left: 15%;
+  color: rgb(121, 124, 123);
+  background-color: white;
+  margin-bottom: 20px;
+}
+.twoColumns button:hover {
+  background-color: rgb(221, 217, 217);
+  transition: background-color 0.5s;
+}
+
+
+.ourServices {
+  position: relative;
+  width: auto;
+}
+.ourServices img {
+  position: fixed;
+  background-color: white;
+  margin-left: 5px;
+  height: 80vh;
+  width: 95%;
+  z-index: -6;
+}
+.ourServices div {
+  position: relative;
+  font-family: arial;
+  color: white;
+  z-index: 5;
+  height: 40vh;
+}
+.ourServices h2 {
+  text-align: center;
+  font-size: 40px;
+}
+.ourServices p {
+  text-align: center;
+  position: relative;
+  padding: 0px 40px 0px 240px;
+  width: 60%;
+  font-size: 20px;
+  line-height: 1.5;
+}
+
+
+
+.fourColumns {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  background-color: white;
+  font-family: arial;
+  line-height: 1.5;
+  color: rgb(121, 124, 123);
+}
+.fourColumns .littleContainer {
+  background-color: rgb(244,244,244);
+  margin-top: 40px;
+  margin-right: 15px;
+  width: 18%;
+  position: relative;
+  margin-bottom: 120px;
+}
+.fourColumns img {
+  height: 30%;
+  width: 100%;
+}
+.fourColumns h3 {
+  padding-left: 30px;
+}
+.fourColumns p {
+  padding: 0px 20px 30px 20px;
+  font-size: 15px;
+}
+.fourColumns button {
+  margin-top: -20px;
+  padding: 10px 31px 10px 31px;
+  font-size: 18px;
+  color: white;
+  border-radius: 8px;
+  position: relative;
+  left: 15%;
+  color: rgb(121, 124, 123);
+  background-color: white;
+}
+.fourColumns button:hover {
+  background-color: rgb(221, 217, 217);
+  transition: background-color 0.5s;
+}
+
+
+
+.oneBigColumn {
+  padding-bottom: 50px;
+  background-color: white;
+  padding-top: 70px;
+  position: relative;
+  top: -180px;
+}
+.oneBigColumn .container10 {
+  margin-left: 100px;
+  background-color: rgb(244,244,244);
+  font-family: arial;
+  line-height: 1.5;
+  color: rgb(121, 124, 123);
+  width: 80%;
+}
+.oneBigColumn img {
+  width: 100%;
+  height: 30%;
+}
+.oneBigColumn h3 {
+  padding-left: 20px;
+}
+.oneBigColumn p {
+  padding: 0px 20px 30px 20px;
+  font-size: 15px;
+}
+.oneBigColumn button {
+    margin-top: -20px;
+    padding: 10px 31px 10px 31px;
+    font-size: 18px;
+    color: white;
+    border-radius: 8px;
+    position: relative;
+    color: rgb(121, 124, 123);
+    background-color: white;
+  }
+  .oneBigColumn button:hover {
+    background-color: rgb(221, 217, 217);
+    transition: background-color 0.5s;
+  }
+
+
+
+
+.contactForm div {
+  position: relative;
+  top: -80px;
+}
+.contactForm .biggestContainer {
+  margin-top: -70px;
+}
+.contactForm img {
+  position: fixed;
+  width: 95%;
+  height: 83%;
+  z-index: -5;
+}
+.contactForm h3 {
+  text-shadow: 2px 2px black;
+  margin: 40px 100px 100px 400px;
+  color: white;
+  font-size: 40px;
+}
+.container11 {
+  display: grid;
+  grid-column-gap: 30px;
+  grid-row-gap: 15px;
+  grid-template-areas:
+  'input9 input9'
+  'input10 input13'
+  'input11 input13'
+  'input12 input13'
+  '. button';
+  margin: 0px 160px 0px 160px;
+  opacity: 0.7;
+}
+.input9 {
+  padding: 20px 35px 20px 35px;
+  font-size: 18px;
+  grid-area: input9;
+  text-align: center;
+  background-color: rgb(244,244,244);
+}
+.input10 {
+  grid-area: input10;
+  border-radius: 3px;
+  padding: 7px;
+  background-color: rgb(244,244,244);
+}
+.input11 {
+  grid-area: input11;
+  border-radius: 3px;
+  padding: 7px;
+  background-color: rgb(244,244,244);
+}
+.input12 {
+  grid-area: input12;
+  border-radius: 3px;
+  padding: 7px;
+  background-color: rgb(244,244,244);
+}
+.input13 {
+  grid-area: input13;
+  border-radius: 3px;
+  background-color: rgb(244,244,244);
+}
+#final_button {
+  grid-area: button;
+  width: 30%;
+  height: 50px;
+  background-color: black;
+  color: white;
+  border-radius: 8px;
+  font-size: 18px;
+}
+#final_button:hover {
+  background-color: white;
+  color: black;
+  transition: background-color 0.5s !important;
+}
+
+
+
+.bottom_rider {
+  text-align: center;
+  background-color: white;
+  height: 300px;
+  margin-top: -150px;
+}
+.bottom_rider h1{
+  padding-top: 20px;
+  font-size: 40px;
 }
